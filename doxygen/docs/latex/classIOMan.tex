@@ -1,0 +1,114 @@
+\hypertarget{classIOMan}{}\doxysection{Класс IOMan}
+\label{classIOMan}\index{IOMan@{IOMan}}
+
+
+Класс для управления вводом и выводом данных.  
+
+
+
+
+{\ttfamily \#include $<$ioman.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIOMan_a4982917e9e642589590dd41203d0c1e6}{IOMan}} (const std\+::string \&path\+\_\+to\+\_\+conf, const std\+::string \&path\+\_\+to\+\_\+in, const std\+::string \&path\+\_\+to\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classIOMan}{IOMan}}. \end{DoxyCompactList}\item 
+std\+::array$<$ std\+::string, 2 $>$ \mbox{\hyperlink{classIOMan_a4029aeba4d55a49d927d585cedba499b}{conf}} ()
+\begin{DoxyCompactList}\small\item\em Метод для чтения конфигурационных данных. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ int16\+\_\+t $>$ $>$ \mbox{\hyperlink{classIOMan_a416d72baf96d4dba56fe6596740272e4}{read}} ()
+\begin{DoxyCompactList}\small\item\em Метод для чтения данных из файла. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIOMan_ad3bf4e9e49c40853c5973a7377dae1a1}{write}} (const std\+::vector$<$ int16\+\_\+t $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Метод для записи данных в файл. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для управления вводом и выводом данных. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classIOMan_a4982917e9e642589590dd41203d0c1e6}\label{classIOMan_a4982917e9e642589590dd41203d0c1e6}} 
+\index{IOMan@{IOMan}!IOMan@{IOMan}}
+\index{IOMan@{IOMan}!IOMan@{IOMan}}
+\doxysubsubsection{\texorpdfstring{IOMan()}{IOMan()}}
+{\footnotesize\ttfamily IOMan\+::\+IOMan (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path\+\_\+to\+\_\+conf,  }\item[{const std\+::string \&}]{path\+\_\+to\+\_\+in,  }\item[{const std\+::string \&}]{path\+\_\+to\+\_\+out }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classIOMan}{IOMan}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em path\+\_\+to\+\_\+conf} & Путь к файлу конфигурации. \\
+\hline
+{\em path\+\_\+to\+\_\+in} & Путь к входному файлу. \\
+\hline
+{\em path\+\_\+to\+\_\+out} & Путь к выходному файлу. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classIOMan_a4029aeba4d55a49d927d585cedba499b}\label{classIOMan_a4029aeba4d55a49d927d585cedba499b}} 
+\index{IOMan@{IOMan}!conf@{conf}}
+\index{conf@{conf}!IOMan@{IOMan}}
+\doxysubsubsection{\texorpdfstring{conf()}{conf()}}
+{\footnotesize\ttfamily std\+::array$<$ std\+::string, 2 $>$ IOMan\+::conf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для чтения конфигурационных данных. 
+
+\begin{DoxyReturn}{Возвращает}
+Массив строк с конфигурационными данными. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classFileNotFoundError}{File\+Not\+Found\+Error}}} & Если не удалось открыть файл конфигурации. \\
+\hline
+{\em \mbox{\hyperlink{classInvalidDataFormatError}{Invalid\+Data\+Format\+Error}}} & Если отсутствуют логин или пароль. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classIOMan_a416d72baf96d4dba56fe6596740272e4}\label{classIOMan_a416d72baf96d4dba56fe6596740272e4}} 
+\index{IOMan@{IOMan}!read@{read}}
+\index{read@{read}!IOMan@{IOMan}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ int16\+\_\+t $>$ $>$ IOMan\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для чтения данных из файла. 
+
+\begin{DoxyReturn}{Возвращает}
+Двумерный вектор с данными. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em std\+::runtime\+\_\+error} & Если не удалось открыть входной файл. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classIOMan_ad3bf4e9e49c40853c5973a7377dae1a1}\label{classIOMan_ad3bf4e9e49c40853c5973a7377dae1a1}} 
+\index{IOMan@{IOMan}!write@{write}}
+\index{write@{write}!IOMan@{IOMan}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void IOMan\+::write (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int16\+\_\+t $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Метод для записи данных в файл. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & Вектор данных для записи. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classFileNotFoundError}{File\+Not\+Found\+Error}}} & Если не удалось открыть выходной файл. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/student/Документы/yagolnicki/client/source/modules/\mbox{\hyperlink{ioman_8h}{ioman.\+h}}\item 
+/home/student/Документы/yagolnicki/client/source/modules/ioman.\+cpp\end{DoxyCompactItemize}

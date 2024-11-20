@@ -1,0 +1,147 @@
+\hypertarget{classNetMan}{}\doxysection{Класс Net\+Man}
+\label{classNetMan}\index{NetMan@{NetMan}}
+
+
+Класс для управления сетевым подключением и взаимодействием.  
+
+
+
+
+{\ttfamily \#include $<$netman.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNetMan_a39706ce775a88a004fae0686f2c105ec}{Net\+Man}} (const std\+::string \&address, uint16\+\_\+t port)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classNetMan}{Net\+Man}}. \end{DoxyCompactList}\item 
+std\+::string \& \mbox{\hyperlink{classNetMan_a5a14e2eade895ea0518d6850d481de71}{get\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Метод для получения адреса сервера. \end{DoxyCompactList}\item 
+uint16\+\_\+t \& \mbox{\hyperlink{classNetMan_ad1f27e86f740e5b2114b09e279f55e1d}{get\+Port}} ()
+\begin{DoxyCompactList}\small\item\em Метод для получения порта сервера. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetMan_aea24324e6c641b63f79d01d75ac9adf2}{conn}} ()
+\begin{DoxyCompactList}\small\item\em Метод для установления сетевого подключения. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetMan_a2e07138e11448dee9d20beb011a7ef79}{auth}} (const std\+::string \&username, const std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Метод для аутентификации пользователя. \end{DoxyCompactList}\item 
+std\+::vector$<$ int16\+\_\+t $>$ \mbox{\hyperlink{classNetMan_ac8d33dd2a0789813783acd53d2b4dc0b}{calc}} (const std\+::vector$<$ std\+::vector$<$ int16\+\_\+t $>$ $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Метод для передачи данных и получения результата. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNetMan_aa06390577036cccc22c452338224638e}\label{classNetMan_aa06390577036cccc22c452338224638e}} 
+void {\bfseries close} ()
+\begin{DoxyCompactList}\small\item\em Метод для закрытия сетевого подключения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для управления сетевым подключением и взаимодействием. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classNetMan_a39706ce775a88a004fae0686f2c105ec}\label{classNetMan_a39706ce775a88a004fae0686f2c105ec}} 
+\index{NetMan@{NetMan}!NetMan@{NetMan}}
+\index{NetMan@{NetMan}!NetMan@{NetMan}}
+\doxysubsubsection{\texorpdfstring{NetMan()}{NetMan()}}
+{\footnotesize\ttfamily Net\+Man\+::\+Net\+Man (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{address,  }\item[{uint16\+\_\+t}]{port }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classNetMan}{Net\+Man}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em address} & Адрес сервера. \\
+\hline
+{\em port} & Порт сервера. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classNetMan_a2e07138e11448dee9d20beb011a7ef79}\label{classNetMan_a2e07138e11448dee9d20beb011a7ef79}} 
+\index{NetMan@{NetMan}!auth@{auth}}
+\index{auth@{auth}!NetMan@{NetMan}}
+\doxysubsubsection{\texorpdfstring{auth()}{auth()}}
+{\footnotesize\ttfamily void Net\+Man\+::auth (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username,  }\item[{const std\+::string \&}]{password }\end{DoxyParamCaption})}
+
+
+
+Метод для аутентификации пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em username} & Имя пользователя. \\
+\hline
+{\em password} & Пароль. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classAuthError}{Auth\+Error}}} & Если не удалось отправить логин, получить соль, отправить хеш или аутентификация не удалась. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classNetMan_ac8d33dd2a0789813783acd53d2b4dc0b}\label{classNetMan_ac8d33dd2a0789813783acd53d2b4dc0b}} 
+\index{NetMan@{NetMan}!calc@{calc}}
+\index{calc@{calc}!NetMan@{NetMan}}
+\doxysubsubsection{\texorpdfstring{calc()}{calc()}}
+{\footnotesize\ttfamily std\+::vector$<$ int16\+\_\+t $>$ Net\+Man\+::calc (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ int16\+\_\+t $>$ $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Метод для передачи данных и получения результата. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & Данные для обработки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результаты обработки данных. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classNetworkError}{Network\+Error}}} & Если не удалось отправить или получить данные. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classNetMan_aea24324e6c641b63f79d01d75ac9adf2}\label{classNetMan_aea24324e6c641b63f79d01d75ac9adf2}} 
+\index{NetMan@{NetMan}!conn@{conn}}
+\index{conn@{conn}!NetMan@{NetMan}}
+\doxysubsubsection{\texorpdfstring{conn()}{conn()}}
+{\footnotesize\ttfamily void Net\+Man\+::conn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для установления сетевого подключения. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classNetworkError}{Network\+Error}}} & Если не удалось создать сокет, установить соединение или адрес не поддерживается. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classNetMan_a5a14e2eade895ea0518d6850d481de71}\label{classNetMan_a5a14e2eade895ea0518d6850d481de71}} 
+\index{NetMan@{NetMan}!getAddress@{getAddress}}
+\index{getAddress@{getAddress}!NetMan@{NetMan}}
+\doxysubsubsection{\texorpdfstring{getAddress()}{getAddress()}}
+{\footnotesize\ttfamily std\+::string \& Net\+Man\+::get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для получения адреса сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+Адрес сервера. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetMan_ad1f27e86f740e5b2114b09e279f55e1d}\label{classNetMan_ad1f27e86f740e5b2114b09e279f55e1d}} 
+\index{NetMan@{NetMan}!getPort@{getPort}}
+\index{getPort@{getPort}!NetMan@{NetMan}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily uint16\+\_\+t \& Net\+Man\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для получения порта сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+Порт сервера. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/student/Документы/yagolnicki/client/source/modules/\mbox{\hyperlink{netman_8h}{netman.\+h}}\item 
+/home/student/Документы/yagolnicki/client/source/modules/netman.\+cpp\end{DoxyCompactItemize}

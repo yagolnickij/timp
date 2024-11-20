@@ -1,0 +1,15 @@
+digraph "/home/student/Документы/yagolnicki/client"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_757c8baa7842c0f58ba016338ed736eb {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="yagolnicki", fontname="Helvetica", fontsize="10", URL="dir_757c8baa7842c0f58ba016338ed736eb.html"]
+  subgraph clusterdir_22b3484cb70e6a0685464d3c13fb456b {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_22b3484cb70e6a0685464d3c13fb456b.html"]
+    dir_22b3484cb70e6a0685464d3c13fb456b [shape=plaintext, label="client"];
+  dir_8b6508cce6f6999da3ef85cb1db95c8b [shape=box, label="source", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_8b6508cce6f6999da3ef85cb1db95c8b.html"];
+  }
+  }
+}

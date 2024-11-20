@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>VClient: Исходный файл /home/student/Документы/yagolnicki/client/source/modules/errors.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">VClient
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_deea9ac2ebb701b26350058d0b80c84f.html">Документы</a></li><li class="navelem"><a class="el" href="dir_757c8baa7842c0f58ba016338ed736eb.html">yagolnicki</a></li><li class="navelem"><a class="el" href="dir_22b3484cb70e6a0685464d3c13fb456b.html">client</a></li><li class="navelem"><a class="el" href="dir_8b6508cce6f6999da3ef85cb1db95c8b.html">source</a></li><li class="navelem"><a class="el" href="dir_fc3490fc9d6d94ffa9ee58f698faa2a9.html">modules</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">errors.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="errors_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ERRORS_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ERRORS_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;exception&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classBasicClientError.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="classBasicClientError.html">BasicClientError</a> : <span class="keyword">public</span> std::exception</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="classBasicClientError.html#afea9fe4663c9c9a1f4a27eb0daa1d12b">BasicClientError</a>(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="classBasicClientError.html#acc29c719d50521b4f4e8c74440d7a7a5">name</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="classBasicClientError.html#a39a98056f6c2d5a2f2dd7b4382015096">message</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="classBasicClientError.html#ad4f33db4d1784945c37c4d3b93b3f6cd">func</a>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="classBasicClientError.html#ac64d80bffb2fd1e07e26d1cdea71a3a4">what</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classBasicClientError.html#acc29c719d50521b4f4e8c74440d7a7a5">   37</a></span>    std::string <a class="code hl_variable" href="classBasicClientError.html#acc29c719d50521b4f4e8c74440d7a7a5">name</a>; </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classBasicClientError.html#ad4f33db4d1784945c37c4d3b93b3f6cd">   38</a></span>    std::string <a class="code hl_variable" href="classBasicClientError.html#ad4f33db4d1784945c37c4d3b93b3f6cd">func</a>; </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classBasicClientError.html#a39a98056f6c2d5a2f2dd7b4382015096">   39</a></span>    <span class="keyword">mutable</span> std::string <a class="code hl_variable" href="classBasicClientError.html#a39a98056f6c2d5a2f2dd7b4382015096">message</a>; </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classFileNotFoundError.html">   45</a></span><span class="keyword">class </span><a class="code hl_class" href="classFileNotFoundError.html">FileNotFoundError</a> : <span class="keyword">public</span> <a class="code hl_class" href="classBasicClientError.html">BasicClientError</a></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_function" href="classFileNotFoundError.html#ab5268db7b1ddfb864faff3f7db34c1e4">FileNotFoundError</a>(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="classBasicClientError.html#a39a98056f6c2d5a2f2dd7b4382015096">message</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="classBasicClientError.html#ad4f33db4d1784945c37c4d3b93b3f6cd">func</a>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classArgsDecodeError.html">   59</a></span><span class="keyword">class </span><a class="code hl_class" href="classArgsDecodeError.html">ArgsDecodeError</a> : <span class="keyword">public</span> <a class="code hl_class" href="classBasicClientError.html">BasicClientError</a></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_function" href="classArgsDecodeError.html#a372cb990a95c15d4e5f1bcd71fbe7d3a">ArgsDecodeError</a>(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="classBasicClientError.html#a39a98056f6c2d5a2f2dd7b4382015096">message</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="classBasicClientError.html#ad4f33db4d1784945c37c4d3b93b3f6cd">func</a>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classInvalidDataFormatError.html">   73</a></span><span class="keyword">class </span><a class="code hl_class" href="classInvalidDataFormatError.html">InvalidDataFormatError</a> : <span class="keyword">public</span> <a class="code hl_class" href="classBasicClientError.html">BasicClientError</a></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_function" href="classInvalidDataFormatError.html#a3978fc926dde693ee3514c4b058f4038">InvalidDataFormatError</a>(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="classBasicClientError.html#a39a98056f6c2d5a2f2dd7b4382015096">message</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="classBasicClientError.html#ad4f33db4d1784945c37c4d3b93b3f6cd">func</a>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>};</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classAuthError.html">   87</a></span><span class="keyword">class </span><a class="code hl_class" href="classAuthError.html">AuthError</a> : <span class="keyword">public</span> <a class="code hl_class" href="classBasicClientError.html">BasicClientError</a></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>{</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <a class="code hl_function" href="classAuthError.html#ad9c6e00f77a1ce97bad70c33deffff27">AuthError</a>(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="classBasicClientError.html#a39a98056f6c2d5a2f2dd7b4382015096">message</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="classBasicClientError.html#ad4f33db4d1784945c37c4d3b93b3f6cd">func</a>);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>};</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classNetworkError.html">  101</a></span><span class="keyword">class </span><a class="code hl_class" href="classNetworkError.html">NetworkError</a> : <span class="keyword">public</span> <a class="code hl_class" href="classBasicClientError.html">BasicClientError</a></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>{</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <a class="code hl_function" href="classNetworkError.html#a819daaf633f46044cc3abeee44d61ae0">NetworkError</a>(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="classBasicClientError.html#a39a98056f6c2d5a2f2dd7b4382015096">message</a>, <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="classBasicClientError.html#ad4f33db4d1784945c37c4d3b93b3f6cd">func</a>);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>};</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#endif </span><span class="comment">// ERRORS_H</span></div>
+<div class="ttc" id="aclassArgsDecodeError_html"><div class="ttname"><a href="classArgsDecodeError.html">ArgsDecodeError</a></div><div class="ttdoc">Класс для обработки ошибок декодирования аргументов.</div><div class="ttdef"><b>Definition:</b> errors.h:60</div></div>
+<div class="ttc" id="aclassArgsDecodeError_html_a372cb990a95c15d4e5f1bcd71fbe7d3a"><div class="ttname"><a href="classArgsDecodeError.html#a372cb990a95c15d4e5f1bcd71fbe7d3a">ArgsDecodeError::ArgsDecodeError</a></div><div class="ttdeci">ArgsDecodeError(const std::string &amp;message, const std::string &amp;func)</div><div class="ttdoc">Конструктор класса ArgsDecodeError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:19</div></div>
+<div class="ttc" id="aclassAuthError_html"><div class="ttname"><a href="classAuthError.html">AuthError</a></div><div class="ttdoc">Класс для обработки ошибок аутентификации.</div><div class="ttdef"><b>Definition:</b> errors.h:88</div></div>
+<div class="ttc" id="aclassAuthError_html_ad9c6e00f77a1ce97bad70c33deffff27"><div class="ttname"><a href="classAuthError.html#ad9c6e00f77a1ce97bad70c33deffff27">AuthError::AuthError</a></div><div class="ttdeci">AuthError(const std::string &amp;message, const std::string &amp;func)</div><div class="ttdoc">Конструктор класса AuthError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:25</div></div>
+<div class="ttc" id="aclassBasicClientError_html"><div class="ttname"><a href="classBasicClientError.html">BasicClientError</a></div><div class="ttdoc">Базовый класс для клиентских ошибок.</div><div class="ttdef"><b>Definition:</b> errors.h:20</div></div>
+<div class="ttc" id="aclassBasicClientError_html_a39a98056f6c2d5a2f2dd7b4382015096"><div class="ttname"><a href="classBasicClientError.html#a39a98056f6c2d5a2f2dd7b4382015096">BasicClientError::message</a></div><div class="ttdeci">std::string message</div><div class="ttdoc">Сообщение об ошибке.</div><div class="ttdef"><b>Definition:</b> errors.h:39</div></div>
+<div class="ttc" id="aclassBasicClientError_html_ac64d80bffb2fd1e07e26d1cdea71a3a4"><div class="ttname"><a href="classBasicClientError.html#ac64d80bffb2fd1e07e26d1cdea71a3a4">BasicClientError::what</a></div><div class="ttdeci">const char * what() const noexcept override</div><div class="ttdoc">Метод для получения сообщения об ошибке.</div><div class="ttdef"><b>Definition:</b> errors.cpp:10</div></div>
+<div class="ttc" id="aclassBasicClientError_html_acc29c719d50521b4f4e8c74440d7a7a5"><div class="ttname"><a href="classBasicClientError.html#acc29c719d50521b4f4e8c74440d7a7a5">BasicClientError::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">Имя ошибки.</div><div class="ttdef"><b>Definition:</b> errors.h:37</div></div>
+<div class="ttc" id="aclassBasicClientError_html_ad4f33db4d1784945c37c4d3b93b3f6cd"><div class="ttname"><a href="classBasicClientError.html#ad4f33db4d1784945c37c4d3b93b3f6cd">BasicClientError::func</a></div><div class="ttdeci">std::string func</div><div class="ttdoc">Имя функции, в которой возникла ошибка.</div><div class="ttdef"><b>Definition:</b> errors.h:38</div></div>
+<div class="ttc" id="aclassBasicClientError_html_afea9fe4663c9c9a1f4a27eb0daa1d12b"><div class="ttname"><a href="classBasicClientError.html#afea9fe4663c9c9a1f4a27eb0daa1d12b">BasicClientError::BasicClientError</a></div><div class="ttdeci">BasicClientError(const std::string &amp;name, const std::string &amp;message, const std::string &amp;func)</div><div class="ttdoc">Конструктор класса BasicClientError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:4</div></div>
+<div class="ttc" id="aclassFileNotFoundError_html"><div class="ttname"><a href="classFileNotFoundError.html">FileNotFoundError</a></div><div class="ttdoc">Класс для обработки ошибок &quot;файл не найден&quot;.</div><div class="ttdef"><b>Definition:</b> errors.h:46</div></div>
+<div class="ttc" id="aclassFileNotFoundError_html_ab5268db7b1ddfb864faff3f7db34c1e4"><div class="ttname"><a href="classFileNotFoundError.html#ab5268db7b1ddfb864faff3f7db34c1e4">FileNotFoundError::FileNotFoundError</a></div><div class="ttdeci">FileNotFoundError(const std::string &amp;message, const std::string &amp;func)</div><div class="ttdoc">Конструктор класса FileNotFoundError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:16</div></div>
+<div class="ttc" id="aclassInvalidDataFormatError_html"><div class="ttname"><a href="classInvalidDataFormatError.html">InvalidDataFormatError</a></div><div class="ttdoc">Класс для обработки ошибок некорректного формата данных.</div><div class="ttdef"><b>Definition:</b> errors.h:74</div></div>
+<div class="ttc" id="aclassInvalidDataFormatError_html_a3978fc926dde693ee3514c4b058f4038"><div class="ttname"><a href="classInvalidDataFormatError.html#a3978fc926dde693ee3514c4b058f4038">InvalidDataFormatError::InvalidDataFormatError</a></div><div class="ttdeci">InvalidDataFormatError(const std::string &amp;message, const std::string &amp;func)</div><div class="ttdoc">Конструктор класса InvalidDataFormatError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:22</div></div>
+<div class="ttc" id="aclassNetworkError_html"><div class="ttname"><a href="classNetworkError.html">NetworkError</a></div><div class="ttdoc">Класс для обработки сетевых ошибок.</div><div class="ttdef"><b>Definition:</b> errors.h:102</div></div>
+<div class="ttc" id="aclassNetworkError_html_a819daaf633f46044cc3abeee44d61ae0"><div class="ttname"><a href="classNetworkError.html#a819daaf633f46044cc3abeee44d61ae0">NetworkError::NetworkError</a></div><div class="ttdeci">NetworkError(const std::string &amp;message, const std::string &amp;func)</div><div class="ttdoc">Конструктор класса NetworkError.</div><div class="ttdef"><b>Definition:</b> errors.cpp:28</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

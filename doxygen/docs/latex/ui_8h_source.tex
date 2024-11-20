@@ -1,0 +1,52 @@
+\hypertarget{ui_8h_source}{}\doxysection{ui.\+h}
+\label{ui_8h_source}\index{/home/student/Документы/yagolnicki/client/source/modules/ui.h@{/home/student/Документы/yagolnicki/client/source/modules/ui.h}}
+\mbox{\hyperlink{ui_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef UI\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define UI\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ioman_8h}{ioman.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{netman_8h}{netman.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{errors_8h}{errors.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{classUserInterface}{UserInterface}}}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31     \mbox{\hyperlink{classUserInterface_af5a272b85b1f81b24245f3ce68e6421a}{UserInterface}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[]);}
+\DoxyCodeLine{32     }
+\DoxyCodeLine{36     \mbox{\hyperlink{classUserInterface_ae588b2ff1711a016dd4c6fc5002c0841}{\string~UserInterface}}();}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{42     std::string \&\mbox{\hyperlink{classUserInterface_a5e28894b7a6d1a8687bd2304764e95fb}{getAddress}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{48     uint16\_t \&\mbox{\hyperlink{classUserInterface_ad6da8a9ba5d71ba7ec0cbf8187b27703}{getPort}}();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{54     std::string \&\mbox{\hyperlink{classUserInterface_ab6f40fb5cb1574aab5e86c224276ca9a}{getInputFilePath}}();}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{60     std::string \&\mbox{\hyperlink{classUserInterface_aeefdd5dd51019aeacaa2ca7271822845}{getOutputFilePath}}();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{66     std::string \&\mbox{\hyperlink{classUserInterface_a5ae249abc3b97a793b53c0bacb185c74}{getConfigFilePath}}();}
+\DoxyCodeLine{67     }
+\DoxyCodeLine{71     \textcolor{keywordtype}{void} \mbox{\hyperlink{classUserInterface_a6d8d6d6b6900823be51259efba78b400}{run}}();}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \textcolor{keyword}{private}:}
+\DoxyCodeLine{74     std::string address; }
+\DoxyCodeLine{75     uint16\_t port; }
+\DoxyCodeLine{76     std::string input\_path; }
+\DoxyCodeLine{77     std::string output\_path; }
+\DoxyCodeLine{78     std::string config\_path; }
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80     \mbox{\hyperlink{classIOMan}{IOMan}} *io\_man; }
+\DoxyCodeLine{81     \mbox{\hyperlink{classNetMan}{NetMan}} *net\_man; }
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83     \textcolor{keywordtype}{bool} help\_flag; }
+\DoxyCodeLine{84 }
+\DoxyCodeLine{91     \textcolor{keywordtype}{void} parseArgs(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[]);}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{96     \textcolor{keywordtype}{void} showHelp();}
+\DoxyCodeLine{97 \};}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// UI\_H}}
+
+\end{DoxyCode}

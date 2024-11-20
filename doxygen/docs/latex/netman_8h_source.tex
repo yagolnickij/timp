@@ -1,0 +1,37 @@
+\hypertarget{netman_8h_source}{}\doxysection{netman.\+h}
+\label{netman_8h_source}\index{/home/student/Документы/yagolnicki/client/source/modules/netman.h@{/home/student/Документы/yagolnicki/client/source/modules/netman.h}}
+\mbox{\hyperlink{netman_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef NETWORK\_MANAGER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define NETWORK\_MANAGER\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <cstdint>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{classNetMan}{NetMan}}}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \mbox{\hyperlink{classNetMan_a39706ce775a88a004fae0686f2c105ec}{NetMan}}(\textcolor{keyword}{const} std::string \&address, uint16\_t port);}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{34     std::string \&\mbox{\hyperlink{classNetMan_a5a14e2eade895ea0518d6850d481de71}{getAddress}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{40     uint16\_t \&\mbox{\hyperlink{classNetMan_ad1f27e86f740e5b2114b09e279f55e1d}{getPort}}();}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{classNetMan_aea24324e6c641b63f79d01d75ac9adf2}{conn}}();}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} \mbox{\hyperlink{classNetMan_a2e07138e11448dee9d20beb011a7ef79}{auth}}(\textcolor{keyword}{const} std::string \&username, \textcolor{keyword}{const} std::string \&password);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{62     std::vector<int16\_t> \mbox{\hyperlink{classNetMan_ac8d33dd2a0789813783acd53d2b4dc0b}{calc}}(\textcolor{keyword}{const} std::vector<std::vector<int16\_t>> \&data);}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{classNetMan_aa06390577036cccc22c452338224638e}{close}}();}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 \textcolor{keyword}{private}:}
+\DoxyCodeLine{70     \textcolor{keywordtype}{int} socket; }
+\DoxyCodeLine{71     std::string address; }
+\DoxyCodeLine{72     uint16\_t port; }
+\DoxyCodeLine{73 \};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// NETWORK\_MANAGER\_H}}
+
+\end{DoxyCode}

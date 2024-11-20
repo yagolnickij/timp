@@ -1,0 +1,117 @@
+\begin{theindex}
+
+  \item {/home/student/Документы/yagolnicki/client/source/main.cpp}, 
+		\hyperpage{26}
+  \item {/home/student/Документы/yagolnicki/client/source/modules/cryptman.h}, 
+		\hyperpage{25}
+  \item {/home/student/Документы/yagolnicki/client/source/modules/errors.h}, 
+		\hyperpage{23, 24}
+  \item {/home/student/Документы/yagolnicki/client/source/modules/ioman.h}, 
+		\hyperpage{21, 22}
+  \item {/home/student/Документы/yagolnicki/client/source/modules/netman.h}, 
+		\hyperpage{25, 26}
+  \item {/home/student/Документы/yagolnicki/client/source/modules/ui.h}, 
+		\hyperpage{22, 23}
+
+  \indexspace
+
+  \item {ArgsDecodeError}, \hyperpage{7}
+  \item {auth}
+    \subitem {NetMan}, \hyperpage{15}
+  \item {AuthError}, \hyperpage{7}
+    \subitem {AuthError}, \hyperpage{7}
+
+  \indexspace
+
+  \item {BasicClientError}, \hyperpage{8}
+    \subitem {BasicClientError}, \hyperpage{8}
+    \subitem {what}, \hyperpage{9}
+
+  \indexspace
+
+  \item {calc}
+    \subitem {NetMan}, \hyperpage{15}
+  \item {conf}
+    \subitem {IOMan}, \hyperpage{13}
+  \item {conn}
+    \subitem {NetMan}, \hyperpage{16}
+  \item {CryptMan}, \hyperpage{9}
+    \subitem {get\_hash}, \hyperpage{9}
+    \subitem {get\_salt}, \hyperpage{10}
+
+  \indexspace
+
+  \item {FileNotFoundError}, \hyperpage{10}
+    \subitem {FileNotFoundError}, \hyperpage{10}
+
+  \indexspace
+
+  \item {get\_hash}
+    \subitem {CryptMan}, \hyperpage{9}
+  \item {get\_salt}
+    \subitem {CryptMan}, \hyperpage{10}
+  \item {getAddress}
+    \subitem {NetMan}, \hyperpage{16}
+    \subitem {UserInterface}, \hyperpage{19}
+  \item {getConfigFilePath}
+    \subitem {UserInterface}, \hyperpage{19}
+  \item {getInputFilePath}
+    \subitem {UserInterface}, \hyperpage{19}
+  \item {getOutputFilePath}
+    \subitem {UserInterface}, \hyperpage{19}
+  \item {getPort}
+    \subitem {NetMan}, \hyperpage{16}
+    \subitem {UserInterface}, \hyperpage{19}
+
+  \indexspace
+
+  \item {InvalidDataFormatError}, \hyperpage{11}
+    \subitem {InvalidDataFormatError}, \hyperpage{11}
+  \item {IOMan}, \hyperpage{12}
+    \subitem {conf}, \hyperpage{13}
+    \subitem {IOMan}, \hyperpage{12}
+    \subitem {read}, \hyperpage{13}
+    \subitem {write}, \hyperpage{13}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{27}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{27}
+
+  \indexspace
+
+  \item {NetMan}, \hyperpage{14}
+    \subitem {auth}, \hyperpage{15}
+    \subitem {calc}, \hyperpage{15}
+    \subitem {conn}, \hyperpage{16}
+    \subitem {getAddress}, \hyperpage{16}
+    \subitem {getPort}, \hyperpage{16}
+    \subitem {NetMan}, \hyperpage{15}
+  \item {NetworkError}, \hyperpage{17}
+    \subitem {NetworkError}, \hyperpage{17}
+
+  \indexspace
+
+  \item {read}
+    \subitem {IOMan}, \hyperpage{13}
+
+  \indexspace
+
+  \item {UserInterface}, \hyperpage{17}
+    \subitem {getAddress}, \hyperpage{19}
+    \subitem {getConfigFilePath}, \hyperpage{19}
+    \subitem {getInputFilePath}, \hyperpage{19}
+    \subitem {getOutputFilePath}, \hyperpage{19}
+    \subitem {getPort}, \hyperpage{19}
+    \subitem {UserInterface}, \hyperpage{18}
+
+  \indexspace
+
+  \item {what}
+    \subitem {BasicClientError}, \hyperpage{9}
+  \item {write}
+    \subitem {IOMan}, \hyperpage{13}
+
+\end{theindex}

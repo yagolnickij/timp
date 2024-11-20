@@ -1,0 +1,63 @@
+\hypertarget{classCryptMan}{}\doxysection{Класс Crypt\+Man}
+\label{classCryptMan}\index{CryptMan@{CryptMan}}
+
+
+Класс для управления криптографическими операциями.  
+
+
+
+
+{\ttfamily \#include $<$cryptman.\+h$>$}
+
+\doxysubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classCryptMan_a2bd152b4dae8ecc2c9fd1e0a0fbaedaa}{get\+\_\+salt}} ()
+\begin{DoxyCompactList}\small\item\em Статический метод для генерации соли. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classCryptMan_adfd35cc4a4e39045e536191cdc2fd705}{get\+\_\+hash}} (const std\+::string \&salt, const std\+::string \&data)
+\begin{DoxyCompactList}\small\item\em Статический метод для вычисления хеша. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для управления криптографическими операциями. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classCryptMan_adfd35cc4a4e39045e536191cdc2fd705}\label{classCryptMan_adfd35cc4a4e39045e536191cdc2fd705}} 
+\index{CryptMan@{CryptMan}!get\_hash@{get\_hash}}
+\index{get\_hash@{get\_hash}!CryptMan@{CryptMan}}
+\doxysubsubsection{\texorpdfstring{get\_hash()}{get\_hash()}}
+{\footnotesize\ttfamily std\+::string Crypt\+Man\+::get\+\_\+hash (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{salt,  }\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Статический метод для вычисления хеша. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em salt} & Соль, используемая для хеширования. \\
+\hline
+{\em data} & Данные для хеширования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Хеш в виде строки. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCryptMan_a2bd152b4dae8ecc2c9fd1e0a0fbaedaa}\label{classCryptMan_a2bd152b4dae8ecc2c9fd1e0a0fbaedaa}} 
+\index{CryptMan@{CryptMan}!get\_salt@{get\_salt}}
+\index{get\_salt@{get\_salt}!CryptMan@{CryptMan}}
+\doxysubsubsection{\texorpdfstring{get\_salt()}{get\_salt()}}
+{\footnotesize\ttfamily std\+::string Crypt\+Man\+::get\+\_\+salt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Статический метод для генерации соли. 
+
+\begin{DoxyReturn}{Возвращает}
+Соль в виде строки. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/student/Документы/yagolnicki/client/source/modules/cryptman.\+h\item 
+/home/student/Документы/yagolnicki/client/source/modules/cryptman.\+cpp\end{DoxyCompactItemize}

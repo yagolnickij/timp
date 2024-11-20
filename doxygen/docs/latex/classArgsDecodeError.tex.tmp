@@ -1,0 +1,54 @@
+\hypertarget{classArgsDecodeError}{}\doxysection{Класс Args\+Decode\+Error}
+\label{classArgsDecodeError}\index{ArgsDecodeError@{ArgsDecodeError}}
+
+
+Класс для обработки ошибок декодирования аргументов.  
+
+
+
+
+{\ttfamily \#include $<$errors.\+h$>$}
+
+
+
+Граф наследования\+:Args\+Decode\+Error\+:
+% FIG 0
+
+
+Граф связей класса Args\+Decode\+Error\+:
+% FIG 1
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classArgsDecodeError_a372cb990a95c15d4e5f1bcd71fbe7d3a}{Args\+Decode\+Error}} (const std\+::string \&\mbox{\hyperlink{classBasicClientError_a39a98056f6c2d5a2f2dd7b4382015096}{message}}, const std\+::string \&\mbox{\hyperlink{classBasicClientError_ad4f33db4d1784945c37c4d3b93b3f6cd}{func}})
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classArgsDecodeError}{Args\+Decode\+Error}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+
+
+\doxysubsection{Подробное описание}
+Класс для обработки ошибок декодирования аргументов. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classArgsDecodeError_a372cb990a95c15d4e5f1bcd71fbe7d3a}\label{classArgsDecodeError_a372cb990a95c15d4e5f1bcd71fbe7d3a}} 
+\index{ArgsDecodeError@{ArgsDecodeError}!ArgsDecodeError@{ArgsDecodeError}}
+\index{ArgsDecodeError@{ArgsDecodeError}!ArgsDecodeError@{ArgsDecodeError}}
+\doxysubsubsection{\texorpdfstring{ArgsDecodeError()}{ArgsDecodeError()}}
+{\footnotesize\ttfamily Args\+Decode\+Error\+::\+Args\+Decode\+Error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message,  }\item[{const std\+::string \&}]{func }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classArgsDecodeError}{Args\+Decode\+Error}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em message} & Сообщение об ошибке. \\
+\hline
+{\em func} & Имя функции, в которой возникла ошибка. \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/student/Документы/yagolnicki/client/source/modules/\mbox{\hyperlink{errors_8h}{errors.\+h}}\item 
+/home/student/Документы/yagolnicki/client/source/modules/errors.\+cpp\end{DoxyCompactItemize}
